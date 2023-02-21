@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Naftali Edwards</title>
   </head>
   <body>
@@ -19,15 +21,21 @@
         <option value="Pacific/Auckland">Auckland</option>
       </select>
 
-      <div class="city">
-        <h2>Pleasanton 🇺🇸</h2>
-        <div class="date">February 20th 2023</div>
-        <div class="time">8:37:18 AM</div>
-      </div>
-      <div class="city">
-        <h2>Amsterdam 🇳🇱</h2>
-        <div class="date">February 20th 2023</div>
-        <div class="time">8:37:18 AM</div>
+      <div id="cities">
+        <div class="city" id="Pleasanton">
+          <div>
+            <h2>Pleasanton</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Amsterdam</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 

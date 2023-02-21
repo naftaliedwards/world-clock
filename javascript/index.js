@@ -6,7 +6,7 @@ function updateTime() {
     let pleasantonTimeElement = pleasantonElement.querySelector(".time");
     let pleasantonTime = moment().tz("America/Pleasanton");
 
-    losAngelesDateElement.innerHTML = pleasantonTime.format("MMMM	Do YYYY");
+    pleasantonDateElement.innerHTML = pleasantonTime.format("MMMM	Do YYYY");
     pleasantonTimeElement.innerHTML = pleasantonTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
